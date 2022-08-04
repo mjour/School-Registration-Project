@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "a016f745-ac2b-41b7-914d-9372a9bbfa59",
+		"name": "RegisterCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "courseRegisterByStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/register/course/{id}/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"register",
+						"course",
+						"{id}",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentRegisterCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/register/student/{id}/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"register",
+						"student",
+						"{id}",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudentsWithoutAnyCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/register/studentsWithoutAnyCourses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"register",
+						"studentsWithoutAnyCourses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "coursesWithoutAnyStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/register/coursesWithoutAnyStudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"register",
+						"coursesWithoutAnyStudents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "bf102302-4780-48b2-8b50-6abb883d33f1",
+		"name": "StudentCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/student/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/student/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"firstName\":\"test\",\n    \"lastName\":\"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/student/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putStudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\n    \"firstName\":\"testing\",\n    \"lastName\":\"testing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/student/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/student/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentIdRegisterCourseId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/student/students/{id}/register/{course_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"student",
+						"students",
+						"{id}",
+						"register",
+						"{course_id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
